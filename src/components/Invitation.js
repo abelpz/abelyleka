@@ -1,7 +1,7 @@
 import { css } from '@emotion/css'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { DatosRegalo } from '../assets/images'
+import { Branch, BranchAlt, DatosRegalo } from '../assets/images'
 import data from '../data'
 import Instagram from './Mensajes/Instagram'
 import Preguntar from './Mensajes/Preguntar'
@@ -85,9 +85,16 @@ function Invitation () {
       </p>
       <p>
         <span className="date">31 de Julio del 2021 a las 2:00 p.m.</span>
-        <span className="branch"></span>
+        <span className="branch">
+          <img src={Branch} alt="" />
+        </span>
       </p>
       {mensaje[guests[0]?.tipo]}
+      <p>
+        <span className="branch">
+          <img src={BranchAlt} alt="" />
+        </span>
+      </p>
       <p>Sabemos el deseo que tienen muchos de poder bendecirnos económicamente durante esta nueva etapa de nuestras vidas.</p>
       <p>Si lo {words.desean}, {words.pueden} hacerlo a través de:</p>
       <span className="datos-regalo">
@@ -102,9 +109,8 @@ export default Invitation
 const invitation = css`
   font-family: 'Montserrat';
   color: #aa959b;
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display:grid;
+  justify-items: center;
   width:100%;
 
   & h2 {
@@ -131,7 +137,17 @@ const invitation = css`
     width: 100%;
     flex: 1;
   }
+  
+  & span.branch{
+    width: 100%;
+    display:block;
 
+    img {
+      max-width: 270px;
+      min-width: 250px;
+    }
+    
+  }
   & span.lista-invitados{
     letter-spacing: 0.2em;
     margin-bottom: 2em;

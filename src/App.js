@@ -16,6 +16,7 @@ function App () {
     <>
       <BackgroundContainer>
         <Background className={background}/>
+        <div className={overlay} ></div>
         <StageDecoration />
         <Particles
           className={particles}
@@ -24,9 +25,9 @@ function App () {
       </BackgroundContainer>
 
       <main className={css`
-        margin:5em;
+        margin:2em;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%,22em), 1fr));
       `}>
         <div className={leftColumn}>
           <div className={logoStyle}>
@@ -109,9 +110,8 @@ const particleSettings = {
 }
 
 const leftColumn = css`
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
+  display: grid;
+  justify-items: center;
   text-align: center;
 `
 const logoStyle = css`
@@ -133,11 +133,23 @@ const particles = css`
   height: 100vh;
   filter: blur(2px);
 `
-const background = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 0;
+const overlay = css`
+  position: absolute;
+  @media (max-width: 785px) {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255,244,246);
+    background: linear-gradient(180deg, rgba(255,244,246,0.55) 0%, rgba(255,236,240,0.44) 59%, rgba(255,244,246,0.9026961126247374) 83%);
+  }
+`
+
+const background = css`
+  @media (max-width: 785px) {
+    opacity: 0.15;
+  }
 `
 const BackgroundContainer = styled.div`
   display: block;

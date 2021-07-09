@@ -4,7 +4,9 @@ import MainPhotoDepthMap from './MainPhotoDepthMap.jpg'
 import SkyGradient from './SkyGradient.png'
 import Logo from './SVG/logo.svg'
 import WhiteWaves from './white-waves.png'
-import DatosRegalo from './DatosRegalo.svg'
+import DatosRegalo from './SVG/DatosRegalo.svg'
+import Branch from './SVG/Branch.svg'
+import BranchAlt from './SVG/Branch2.svg'
 
 export {
   Leafs,
@@ -13,5 +15,7 @@ export {
   SkyGradient,
   Logo,
   WhiteWaves,
-  DatosRegalo
+  DatosRegalo,
+  Branch,
+  BranchAlt
 }

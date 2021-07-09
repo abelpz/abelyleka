@@ -20,6 +20,7 @@ const LeafTop = styled.div(_ => ({
   top: '-50px',
   left: '-35px',
   width: '25vw',
+  minWidth: '14em',
   '& img': {
     width: '100%'
   }
@@ -31,6 +32,7 @@ const LeafBottom = styled.div(_ => ({
   bottom: '-15em',
   left: 'calc(50vw - 3em)',
   width: '25vw',
+  minWidth: '14em',
   '& img': {
     width: '100%'
   }
