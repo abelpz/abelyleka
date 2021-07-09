@@ -1,6 +1,7 @@
 import { css } from '@emotion/css'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { DatosRegalo } from '../assets/images'
 import data from '../data'
 import Instagram from './Mensajes/Instagram'
 import Preguntar from './Mensajes/Preguntar'
@@ -16,7 +17,11 @@ function Invitation () {
     la: 'la',
     acompanaran: 'acompañaran',
     desean: 'desean',
-    pueden: 'pueden'
+    pueden: 'pueden',
+    podran: 'podrán',
+    verlos: 'verlos',
+    sus: 'sus',
+    correos: 'correos'
   })
   useEffect(() => {
     const guestHead = data.filter((guest) => {
@@ -30,10 +35,10 @@ function Invitation () {
     setGuests(guestGroup)
   }, [])
   const mensaje = {
-    Zoom: <Zoom/>,
-    Presencial: <Presencial/>,
-    Instagram: <Instagram/>,
-    Preguntar: <Preguntar/>
+    Zoom: <Zoom words={words}/>,
+    Presencial: <Presencial words={words}/>,
+    Instagram: <Instagram words={words}/>,
+    Preguntar: <Preguntar words={words}/>
   }
 
   useEffect(() => {
@@ -45,7 +50,11 @@ function Invitation () {
         la: '',
         acompanaran: 'acompañaras',
         desean: 'deseas',
-        pueden: 'puedes'
+        pueden: 'puedes',
+        podran: 'podrás',
+        verlos: 'verte',
+        sus: 'tu',
+        correos: 'correo'
       })
     }
   }, [guests])
@@ -57,16 +66,18 @@ function Invitation () {
       {(guests?.length > 0) &&
         <>
           <h2>{guests[0]['nombre del grupo']}</h2>
-         <span className="lista-invitados" >
-          {guests.map((guest, key) => {
-            console.log(key)
-            return (
-              <span key={key} className="invitado">
-                {guest.nombre} {guest.apellido} {(guests[key] !== guests[guests.length - 1]) && ' + '}
-              </span>
-            )
-          })}
-          </span>
+          {(guests.length > 2) &&
+            <span className="lista-invitados" >
+              {guests.map((guest, key) => {
+                console.log(key)
+                return (
+                  <span key={key} className="invitado">
+                    {guest.nombre} {guest.apellido} {(guests[key] !== guests[guests.length - 1]) && ' + '}
+                  </span>
+                )
+              })}
+            </span>
+          }
         </>
       }
       <p>
@@ -79,6 +90,9 @@ function Invitation () {
       {mensaje[guests[0]?.tipo]}
       <p>Sabemos el deseo que tienen muchos de poder bendecirnos económicamente durante esta nueva etapa de nuestras vidas.</p>
       <p>Si lo {words.desean}, {words.pueden} hacerlo a través de:</p>
+      <span className="datos-regalo">
+        <img src={DatosRegalo} alt="Datos para el regalo" />
+      </span>
     </div>
   )
 }
@@ -128,6 +142,14 @@ const invitation = css`
     & span.invitado{
       margin: 0em, 1em;
       font-style: italic;
+    }
+  }
+
+  & span.datos-regalo{
+    margin-top: 2em;
+
+    & img {
+      width: 20em;
     }
   }
 
