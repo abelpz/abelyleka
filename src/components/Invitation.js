@@ -63,7 +63,8 @@ function Invitation () {
             return (
               <span key={key} className="invitado">
                 {guest.nombre} {guest.apellido} {(guests[key] !== guests[guests.length - 1]) && ' + '}
-              </span>)
+              </span>
+            )
           })}
           </span>
         </>
