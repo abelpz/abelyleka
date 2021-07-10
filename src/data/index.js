@@ -5,7 +5,7 @@ const data = [
     nombre: 'Hernan',
     apellido: 'Pérez',
     'otro contacto': '',
-    tipo: 'zoom',
+    tipo: 'Zoom',
     parentezco: 'papá',
     de: 'Abel',
     extras: 0
@@ -16,7 +16,7 @@ const data = [
     nombre: 'Esneyra',
     apellido: 'Mendoza',
     'otro contacto': '',
-    tipo: 'zoom',
+    tipo: 'Zoom',
     parentezco: 'mamá',
     de: 'Abel',
     extras: 0
@@ -27,7 +27,7 @@ const data = [
     nombre: 'Sara',
     apellido: 'Pérez',
     'otro contacto': '',
-    tipo: 'zoom',
+    tipo: 'Zoom',
     parentezco: 'hermana',
     de: 'Abel',
     extras: 0
@@ -38,7 +38,7 @@ const data = [
     nombre: 'Michael',
     apellido: 'Masterson',
     'otro contacto': '',
-    tipo: 'zoom',
+    tipo: 'Zoom',
     parentezco: 'cuñado',
     de: 'Abel',
     extras: 0
@@ -49,7 +49,7 @@ const data = [
     nombre: 'Greyza',
     apellido: 'Pérez',
     'otro contacto': '',
-    tipo: 'zoom',
+    tipo: 'Zoom',
     parentezco: 'hermana',
     de: 'Abel',
     extras: 0
@@ -60,7 +60,7 @@ const data = [
     nombre: 'Emma',
     apellido: 'Masterson',
     'otro contacto': '',
-    tipo: 'zoom',
+    tipo: 'Zoom',
     parentezco: 'sobrina',
     de: 'Abel',
     extras: 0
@@ -71,7 +71,7 @@ const data = [
     nombre: 'Adela',
     apellido: 'Mendoza',
     'otro contacto': '',
-    tipo: 'zoom',
+    tipo: 'Zoom',
     parentezco: 'tía',
     de: 'Abel',
     extras: 0
