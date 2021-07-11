@@ -30,7 +30,6 @@ function Invitation () {
     })
     console.log(guestHead)
     const guestGroup = data.filter((guest) => {
-      console.log(guestHead[0].grupo)
       return guest.grupo === guestHead[0].grupo
     })
     setGuests(guestGroup)

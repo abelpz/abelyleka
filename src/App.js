@@ -147,6 +147,9 @@ const overlay = css`
 `
 
 const background = css`
+  position:fixed;
+  right:0;
+  bottom:0;
   @media (max-width: 785px) {
     opacity: 0.15;
   }
