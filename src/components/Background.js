@@ -83,18 +83,22 @@ function Background (props) {
 
       setCanvasStyle({ ...canvasStyle, width, height })
 
-      // if (height < (imageState.height - 160)) {
-      setImageState({
-        ...imageInitialState,
-        x: imageState.pivotX - (imageInitialState.width - width),
-        pivotX: imageState.pivotX - (imageInitialState.width - width)
-      })
+      if (height < (imageState.height - 160)) {
+        setImageState({
+          ...imageInitialState,
+          x: imageState.pivotX - (imageInitialState.width - width),
+          pivotX: imageState.pivotX - (imageInitialState.width - width)
+        })
       // console.log('resizeX', imageState.pivotX)
       // console.log('resizePX', imageState.pivotX)
-      // }
+      }
     },
     [imageState]
   )
+
+  useEffect(() => {
+    setImageState(imageInitialState)
+  }, [])
 
   useEffect(() => {
     setRenderFilter(true)
