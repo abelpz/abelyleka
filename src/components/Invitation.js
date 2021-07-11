@@ -64,8 +64,8 @@ function Invitation () {
   return (
     <>
       <Helmet>
-        <title>Abel y Valeska</title>
-        <meta property="og:title" content={guests?.length > 0 && guests[0]['nombre del grupo']} />
+        <title>Abel y Valeska | {guests?.length > 0 && guests[0]['nombre del grupo']}</title>
+        <meta property="og:title" content={'Abel y Valeska | ' + guests?.length > 0 && guests[0]['nombre del grupo']} />
         <meta property="og:url" content={window.location.pathname + window.location.search} />
         <meta property="og:image" content={Thumbnail} />
         <meta
