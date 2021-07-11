@@ -1,7 +1,8 @@
 import { css } from '@emotion/css'
 import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet'
 import { useParams } from 'react-router-dom'
-import { Branch, BranchAlt, DatosRegalo } from '../assets/images'
+import { Branch, BranchAlt, DatosRegalo, Thumbnail } from '../assets/images'
 import data from '../data'
 import Instagram from './Mensajes/Instagram'
 import Preguntar from './Mensajes/Preguntar'
@@ -61,46 +62,58 @@ function Invitation () {
   console.log(words)
 
   return (
-    <div className={invitation}>
-      <p>Para nosotros es un placer y un privilegio invitar a</p>
-      {(guests?.length > 0) &&
-        <>
-          <h2>{guests[0]['nombre del grupo']}</h2>
-          {(guests.length > 2) &&
-            <span className="lista-invitados" >
-              {guests.map((guest, key) => {
-                console.log(key)
-                return (
-                  <span key={key} className="invitado">
-                    {guest.nombre} {guest.apellido} {(guests[key] !== guests[guests.length - 1]) && ' + '}
-                  </span>
-                )
-              })}
-            </span>
-          }
-        </>
-      }
-      <p>
-        a celebrar con nosotros el día de nuestra boda. Queremos compartir la alegría de nuestra boda con{words.ustedes}, por eso nos encantaría que nos {words.acompanaran} el día
-      </p>
-      <p>
-        <span className="date">31 de Julio del 2021 a las 2:00 p.m.</span>
-        <span className="branch">
-          <img src={Branch} alt="" />
+    <>
+      <Helmet>
+        <title>Abel y Valeska</title>
+        <meta property="og:title" content={guests?.length > 0 && guests[0]['nombre del grupo']} />
+        <meta property="og:url" content={window.location.pathname + window.location.search} />
+        <meta property="og:image" content={Thumbnail} />
+        <meta
+            property="og:description"
+            content={guests?.length > 0 && guests[0]['nombre del grupo']}
+        />
+      </Helmet>
+      <div className={invitation}>
+        <p>Para nosotros es un placer y un privilegio invitar a</p>
+        {(guests?.length > 0) &&
+          <>
+            <h2>{guests[0]['nombre del grupo']}</h2>
+            {(guests.length > 2) &&
+              <span className="lista-invitados" >
+                {guests.map((guest, key) => {
+                  console.log(key)
+                  return (
+                    <span key={key} className="invitado">
+                      {guest.nombre} {guest.apellido} {(guests[key] !== guests[guests.length - 1]) && ' + '}
+                    </span>
+                  )
+                })}
+              </span>
+            }
+          </>
+        }
+        <p>
+          a celebrar con nosotros el día de nuestra boda. Queremos compartir la alegría de nuestra boda con{words.ustedes}, por eso nos encantaría que nos {words.acompanaran} el día
+        </p>
+        <p>
+          <span className="date">31 de Julio del 2021 a las 2:00 p.m.</span>
+          <span className="branch">
+            <img src={Branch} alt="" />
+          </span>
+        </p>
+        {mensaje[guests[0]?.tipo]}
+        <p>
+          <span className="branch">
+            <img src={BranchAlt} alt="" />
+          </span>
+        </p>
+        <p>Sabemos el deseo que tienen muchos de poder bendecirnos económicamente durante esta nueva etapa de nuestras vidas.</p>
+        <p>Si lo {words.desean}, {words.pueden} hacerlo a través de:</p>
+        <span className="datos-regalo">
+          <img src={DatosRegalo} alt="Datos para el regalo" />
         </span>
-      </p>
-      {mensaje[guests[0]?.tipo]}
-      <p>
-        <span className="branch">
-          <img src={BranchAlt} alt="" />
-        </span>
-      </p>
-      <p>Sabemos el deseo que tienen muchos de poder bendecirnos económicamente durante esta nueva etapa de nuestras vidas.</p>
-      <p>Si lo {words.desean}, {words.pueden} hacerlo a través de:</p>
-      <span className="datos-regalo">
-        <img src={DatosRegalo} alt="Datos para el regalo" />
-      </span>
-    </div>
+      </div>
+    </>
   )
 }
 
