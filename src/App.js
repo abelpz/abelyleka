@@ -175,8 +175,9 @@ const background = css`
   position:fixed;
   right:0;
   bottom:0;
+  z-index: -1;
   @media (max-width: 785px) {
-    opacity: 1;
+    z-index: -2;
   }
 `
 const BackgroundContainer = styled.div`
