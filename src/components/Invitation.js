@@ -149,6 +149,10 @@ const invitation = css`
     width: 100%;
     flex: 1;
   }
+
+  & p {
+    display: block;
+  }
   
   & span.branch{
     width: 100%;

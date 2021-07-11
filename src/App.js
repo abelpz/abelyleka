@@ -16,7 +16,6 @@ function App () {
     <>
       <BackgroundContainer>
         <Background className={background}/>
-        <div className={overlay} ></div>
         <StageDecoration />
         <Particles
           className={particles}
@@ -24,11 +23,7 @@ function App () {
         />
       </BackgroundContainer>
 
-      <main className={css`
-        margin:2em;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%,22em), 1fr));
-      `}>
+      <main className={mainStyle}>
         <div className={leftColumn}>
           <div className={logoStyle}>
             <img src={Logo} alt="Abel y Valeska" />
@@ -44,6 +39,7 @@ function App () {
         <div className="right-column">
         </div>
       </main>
+      <div className={imageViewGap} ></div>
     </>
   )
 }
@@ -109,6 +105,38 @@ const particleSettings = {
   }
 }
 
+const mainStyle = css`
+  padding:2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,22em), 1fr));
+  position: relative;
+  &:before {
+    content: '';
+    display: none;
+    @media (max-width: 785px) {
+      display:block;
+      position: absolute;
+      z-index:-1;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background: rgb(255,244,246);
+      background: linear-gradient(180deg, rgba(255,244,246,0.92) 0%, rgba(255,244,246,0.90) 85%, rgba(255,244,246,0) 100%);
+    }
+  }
+  &:after {
+    display: none;
+    content: '';
+    @media (max-width: 785px) {
+      display: block;
+      width: 100%;
+      height:30em;
+    }
+  }
+}
+`
+
 const leftColumn = css`
   display: grid;
   justify-items: center;
@@ -133,17 +161,14 @@ const particles = css`
   height: 100vh;
   filter: blur(2px);
 `
-const overlay = css`
-  position: absolute;
+const imageViewGap = css`
+  display:none;
   @media (max-width: 785px) {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: rgb(255,244,246);
-    background: linear-gradient(180deg, rgba(255,244,246,0.55) 0%, rgba(255,236,240,0.44) 59%, rgba(255,244,246,0.9026961126247374) 83%);
+    display:block;
   }
+  
 `
 
 const background = css`
@@ -151,15 +176,11 @@ const background = css`
   right:0;
   bottom:0;
   @media (max-width: 785px) {
-    opacity: 0.15;
+    opacity: 1;
   }
 `
 const BackgroundContainer = styled.div`
   display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -2;
 `
 
 export default App
