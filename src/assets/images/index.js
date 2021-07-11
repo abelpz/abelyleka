@@ -7,7 +7,7 @@ import WhiteWaves from './white-waves.png'
 import DatosRegalo from './SVG/DatosRegalo.svg'
 import Branch from './SVG/Branch.svg'
 import BranchAlt from './SVG/Branch2.svg'
-import Thumbnail from './Thumbnail.png'
+import Thumbnail from './thumbnail.png'
 
 export {
   Leafs,
