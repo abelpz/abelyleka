@@ -19,6 +19,24 @@ import {
 } from '../assets/images'
 
 function Background (props) {
+  const [images, setImages] = useState({})
+
+  const imagesLoaded = (imagesArray) => {
+    return new Promise((resolve, reject) => {
+      let loadedImagesCounter = 0
+      imagesArray.forEach((image) => {
+        const img = new Image()
+        img.src = image
+        img.addEventListener('load', () => {
+          loadedImagesCounter++
+          if (loadedImagesCounter === imagesArray.length) {
+            resolve(true)
+          }
+        })
+      })
+    })
+  }
+
   const [windowSize, setWindowSize] = useState({
     width: document.documentElement.clientWidth,
     height: document.documentElement.clientHeight
@@ -86,12 +104,29 @@ function Background (props) {
       }
       setWindowSize({ width, height })
     },
-    [imageState]
+    [imageState, windowSize]
   )
 
   useEffect(() => {
-    setImageState(imageInitialState)
+    imagesLoaded([MainPhoto, MainPhotoDepthMap])
+      .then((loaded) => {
+        if (loaded) {
+          setImages(MainPhoto, MainPhotoDepthMap)
+        }
+      })
   }, [])
+
+  useEffect(() => {
+    setImageState({
+      ...imageInitialState
+    })
+    setFilterState({
+      scale: {
+        x: 1,
+        y: 1
+      }
+    })
+  }, [images])
 
   useEffect(() => {
     setRenderFilter(true)
@@ -104,7 +139,7 @@ function Background (props) {
   }, [imageState])
 
   return (
-    <Stage options={canvasOptions} {...canvasStyle} {...props}>
+    <Stage options={canvasOptions} {...canvasStyle} {...props} >
       <Sprite image={MainPhotoDepthMap} ref={displacementSpriteRef} {...imageState} />
 
       {renderFilter && (
