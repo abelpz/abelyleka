@@ -3903,7 +3903,7 @@ const data = [
     Enviado: '',
     nombre: 'Abraham',
     apellido: 'Velázquez',
-    'nombre del grupo': 'Srto. Abraham Velazquez',
+    'nombre del grupo': 'Sr. Abraham Velazquez',
     grupo: 164,
     'otro contacto': '',
     tipo: 'Instagram',
