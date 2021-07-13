@@ -1177,8 +1177,8 @@ const data = [
   },
   {
     Enviado: '',
-    nombre: 'Dave',
-    apellido: 'Mckinnon',
+    nombre: 'Tío',
+    apellido: 'Dave',
     'nombre del grupo': 'Flia. Mckinnon',
     grupo: 49,
     'otro contacto': '',
@@ -1189,13 +1189,25 @@ const data = [
   },
   {
     Enviado: '',
-    nombre: 'Luz Marina',
-    apellido: 'Mckinnon',
+    nombre: 'Tía',
+    apellido: 'Luz',
     'nombre del grupo': '',
     grupo: 49,
     'otro contacto': '',
     tipo: 'Zoom',
     parentezco: 'Tía',
+    de: 'Abel',
+    link: 'https://abelyvaleska.com/invitacion/'
+  },
+  {
+    Enviado: '',
+    nombre: 'Marco',
+    apellido: 'Mckinnon',
+    'nombre del grupo': '',
+    grupo: 49,
+    'otro contacto': '',
+    tipo: 'Zoom',
+    parentezco: 'Mascota',
     de: 'Abel',
     link: 'https://abelyvaleska.com/invitacion/'
   },
