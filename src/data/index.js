@@ -75,7 +75,7 @@ const data = [
     Enviado: 'x',
     nombre: 'Adela',
     apellido: 'Mendoza',
-    'nombre del grupo': 'Sra. Adela Mendoza',
+    'nombre del grupo': 'Sres. Adela Mendoza y Agustín Jauregui',
     grupo: 3,
     'otro contacto': '',
     tipo: 'Zoom',
@@ -432,7 +432,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Nelson',
     apellido: 'Guevara',
     'nombre del grupo': 'Flia. Guevara Salmerón',
@@ -444,7 +444,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/FliaGuevaraSalmeron'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'André',
     apellido: 'Guevara',
     'nombre del grupo': '',
@@ -456,7 +456,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Daniel',
     apellido: 'Guevara',
     'nombre del grupo': '',
@@ -792,7 +792,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SrtoDanielGalvis'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Anner',
     apellido: 'González',
     'nombre del grupo': 'Anner González y Jessika Chavez',
@@ -804,7 +804,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/AnneryJessika'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Jessika',
     apellido: 'Chavez',
     'nombre del grupo': '',
@@ -948,7 +948,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SraEdniHerrera'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Iván José',
     apellido: 'Herrera',
     'nombre del grupo': 'Flia. Herrera Loreto',
@@ -960,7 +960,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/FliaHerreraLoreto'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'María',
     apellido: 'de Herrera',
     'nombre del grupo': '',
@@ -972,7 +972,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Ivana',
     apellido: 'Herrera',
     'nombre del grupo': '',
@@ -984,7 +984,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Otoniel',
     apellido: 'Herrera',
     'nombre del grupo': '',
@@ -996,7 +996,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Jair',
     apellido: 'Herrera',
     'nombre del grupo': '',
@@ -1287,7 +1287,7 @@ const data = [
     Enviado: '',
     nombre: 'Daniel',
     apellido: 'Pérez',
-    'nombre del grupo': 'Flia. Pérez',
+    'nombre del grupo': 'Flia. Pérez Gálviz',
     grupo: 54,
     'otro contacto': '',
     tipo: 'Zoom',
@@ -1298,7 +1298,7 @@ const data = [
   {
     Enviado: '',
     nombre: 'Andrea',
-    apellido: 'Galvis de Pérez',
+    apellido: 'de Pérez',
     'nombre del grupo': '',
     grupo: 54,
     'otro contacto': '',
@@ -1344,7 +1344,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SraReinaArteaga'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Nelson',
     apellido: 'Peraza',
     'nombre del grupo': 'Flia. Peraza Covault',
@@ -1356,7 +1356,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/FliaPerazaCovault'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Mariú',
     apellido: 'de Peraza',
     'nombre del grupo': '',
@@ -1368,7 +1368,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Jonathan',
     apellido: 'Peraza',
     'nombre del grupo': '',
@@ -1380,7 +1380,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Eugenia',
     apellido: 'Peraza',
     'nombre del grupo': '',
@@ -1524,7 +1524,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Beatriz',
     apellido: 'Vidal',
     'nombre del grupo': 'Hna. Beatriz Vidal',
@@ -1695,7 +1695,7 @@ const data = [
     Enviado: '',
     nombre: 'Arelys',
     apellido: 'Lameda',
-    'nombre del grupo': 'Srta. Arelys Lameda',
+    'nombre del grupo': 'Sra. Arelys Lameda',
     grupo: 71,
     'otro contacto': '',
     tipo: 'Instagram',
@@ -1776,7 +1776,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SraBiggi'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Briceida',
     apellido: 'Marquez',
     'nombre del grupo': 'Sra. Briceida Marquez y Srto. Maiker Castañeda',
@@ -1788,7 +1788,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/FliaCastanedaMarquez'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Maiker',
     apellido: 'Castañeda',
     'nombre del grupo': '',
@@ -1812,7 +1812,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SraClaraNieto'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Cristel',
     apellido: 'Fernández',
     'nombre del grupo': 'Sra. Cristel Fernández, Samuel y Abel Cuicas',
@@ -1824,7 +1824,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SraCristelFernandez'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Samuel',
     apellido: 'Cuicas',
     'nombre del grupo': '',
@@ -1836,7 +1836,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Abel',
     apellido: 'Cuicas',
     'nombre del grupo': '',
@@ -2328,7 +2328,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SrMichelRaffoul'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Jelussy',
     apellido: 'Rojas',
     'nombre del grupo': 'Sra. Jelussy y Srto. André Rojas',
@@ -2340,7 +2340,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/FliaRojas'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'André',
     apellido: 'Rojas',
     'nombre del grupo': '',
@@ -2412,7 +2412,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Joel',
     apellido: 'Arenas',
     'nombre del grupo': 'Hno. Joel Arenas',
@@ -2496,7 +2496,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SraJudithFerraez'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Rafael',
     apellido: 'Contreras',
     'nombre del grupo': 'Srs. Rafael y Laura Contreras',
@@ -2508,7 +2508,7 @@ const data = [
     link: 'https://abelyvaleska.com/invitacion/SrsRafaelyLauraContreras'
   },
   {
-    Enviado: '',
+    Enviado: 'x',
     nombre: 'Laura',
     apellido: 'de Contreras',
     'nombre del grupo': '',
@@ -4197,6 +4197,366 @@ const data = [
     tipo: 'Instagram',
     parentezco: 'Hermana Bethel',
     de: 'Valeska',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Mita',
+    apellido: 'Muñoz',
+    'nombre del grupo': 'Familia Torres Muñoz',
+    grupo: 192,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: 'Familia',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Jennifer',
+    apellido: 'Masterson',
+    'nombre del grupo': 'Ms. Jennifer Masterson',
+    grupo: 193,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: 'Ms. Jennifer',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Ivis',
+    apellido: 'Alexis',
+    'nombre del grupo': 'Sra. Ivis Alexis y familia',
+    grupo: 194,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: 'Ivis',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Haydee',
+    apellido: 'Samara',
+    'nombre del grupo': 'Sra. Haydee Samara',
+    grupo: 195,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Esperanza',
+    apellido: 'Mendoza',
+    'nombre del grupo': 'Sra. Esperanza Mendoza',
+    grupo: 196,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Gabriel',
+    apellido: 'Mendoza',
+    'nombre del grupo': 'Sr. Gabriel Mendoza',
+    grupo: 197,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Alba',
+    apellido: 'Torres',
+    'nombre del grupo': 'Sra. Alba Torres',
+    grupo: 198,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Lizet',
+    apellido: 'Alvear',
+    'nombre del grupo': 'Sra. Lizet Alvear Torres',
+    grupo: 199,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Lizmar',
+    apellido: 'Alvear',
+    'nombre del grupo': 'Sr. Lismar Alvear',
+    grupo: 200,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Jairo',
+    apellido: 'Torres',
+    'nombre del grupo': 'Srs. Jairo y Teresa Torres',
+    grupo: 201,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Teresa',
+    apellido: 'Torres',
+    'nombre del grupo': '',
+    grupo: 201,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Luisana',
+    apellido: 'Torres',
+    'nombre del grupo': 'Sra. Luisana Torres',
+    grupo: 202,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Maritza',
+    apellido: 'Lazarde',
+    'nombre del grupo': 'Sra. Maritza Lazarde',
+    grupo: 203,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Lucelys',
+    apellido: 'Torres',
+    'nombre del grupo': 'Sra. Lucelys Torres',
+    grupo: 204,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Luisana',
+    apellido: 'Cedeño',
+    'nombre del grupo': 'Sra. Luisana Cedeño',
+    grupo: 205,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Irene',
+    apellido: 'Jhonston',
+    'nombre del grupo': 'Sra. Irene Jhonston',
+    grupo: 206,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Ariana',
+    apellido: 'Daza',
+    'nombre del grupo': 'Sra. Ariana Daza',
+    grupo: 207,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Mary',
+    apellido: 'Torres',
+    'nombre del grupo': 'Sra. Mary Torres',
+    grupo: 208,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Scott',
+    apellido: 'Stonigthon',
+    'nombre del grupo': 'Flia. Stonigthon',
+    grupo: 209,
+    'otro contacto': '',
+    tipo: 'Zoom',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Irene',
+    apellido: 'Stonigthon',
+    'nombre del grupo': '',
+    grupo: 209,
+    'otro contacto': '',
+    tipo: 'Zoom',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Lila',
+    apellido: 'Stonigthon',
+    'nombre del grupo': '',
+    grupo: 209,
+    'otro contacto': '',
+    tipo: 'Zoom',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Paloma',
+    apellido: 'Stonigthon',
+    'nombre del grupo': '',
+    grupo: 209,
+    'otro contacto': '',
+    tipo: 'Zoom',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Marena',
+    apellido: 'Palma',
+    'nombre del grupo': 'Sra. Marena Palma',
+    grupo: 210,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Ana',
+    apellido: 'Machado',
+    'nombre del grupo': 'Sra. Ana Machado',
+    grupo: 211,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Luisanyelis',
+    apellido: 'Cedeño',
+    'nombre del grupo': 'Srta. Luisanyelis Cedeño',
+    grupo: 212,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Griseldina',
+    apellido: 'Zambrano',
+    'nombre del grupo': 'Sra. Griseldina Zambrano',
+    grupo: 213,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Arelis',
+    apellido: 'Villasana',
+    'nombre del grupo': 'Sra. Arelis Villasana',
+    grupo: 214,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Jose Antonio',
+    apellido: 'Pérez',
+    'nombre del grupo': 'Sr. Jose Antonio Pérez',
+    grupo: 215,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Abel',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Idiomas',
+    apellido: 'Puentes',
+    'nombre del grupo': 'El equipo de Idiomas Puentes',
+    grupo: 216,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Ambos',
+    link: ''
+  },
+  {
+    Enviado: '',
+    nombre: 'Iglesia',
+    apellido: 'Ríos de Agua Viva',
+    'nombre del grupo': 'Nuestros amados hermanos de Ríos de Agua Viva',
+    grupo: 217,
+    'otro contacto': '',
+    tipo: 'Instagram',
+    parentezco: '',
+    de: 'Ambos',
     link: ''
   }
 ]
