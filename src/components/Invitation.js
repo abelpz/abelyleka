@@ -101,6 +101,16 @@ function Invitation () {
           </span>
         </p>
         {mensaje[guests[0]?.tipo]}
+        { guests[0].tipo === 'presencial' && (<>Número de mesa: {guests[0]?.mesa}</>) }
+        {
+          guests[0].tipo === 'presencial' && guests.map((guest) => (
+            <>
+              {(guest.mesa !== guests[0].mesa) && (
+                <p><span className="mesa">{guest.nombre} {guest.apellido}:</span> {guest.mesa}</p>
+              )}
+            </>
+          ))
+        }
         <p>
           <span className="branch">
             <img src={BranchAlt} alt="" />

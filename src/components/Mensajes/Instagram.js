@@ -4,8 +4,12 @@ function Instagram ({ words }) {
   return (
     <>
       <p>
-        A través de Instagram, dónde {words.podran} ver la ceremonia en vivo y participar escribiéndonos en vivo desde la transmisión. Muy pronto {words.podran} encontrar la información y el enlace a la transmisión de Instagram en esta invitación y directamente en sus correos o medios de contacto.
+        A través de Instagram, dónde {words.podran} ver la ceremonia en vivo y participar escribiéndonos desde la transmisión. Al inicio de la ceremonia {words.podran} entrar a través de la cuenta:
       </p>
+      <p style={{ width: '100%' }}>
+        <a href="https://instagram.com/abelyvaleska">@abelyvaleska</a><br/>
+      </p>
+      <p>en instagram.</p>
     </>
   )
 }
