@@ -110,7 +110,10 @@ function Invitation () {
           guests[0]?.tipo === 'Presencial' && guests.map((guest) => (
             <>
               {(guest.mesa !== guests[0].mesa) && (
-                <p><span className="mesa">{guest.nombre} {guest.apellido}:</span> {guest.mesa}</p>
+                <>
+                  <p><span className="mesa">{guest.nombre} {guest.apellido} (mesa):</span></p>
+                  <span>{guest.mesa}</span>
+                </>
               )}
             </>
           ))
